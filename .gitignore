@@ -1,0 +1,7 @@
+/dist
+/tmp
+/vendor
+build
+.env
+.idea
+
