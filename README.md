@@ -34,6 +34,12 @@ DB_PORT=
 air
 ```
 
+after running, create sample data for oauth2_client
+```
+INSERT INTO oauth2_client (id,created_at,updated_at,deleted_at,secret,"domain","data") VALUES
+	 (1,'2021-12-21 22:47:48.060504+07','2021-12-21 22:47:48.060504+07',NULL,'999999','http://localhost','{"ClientID":"1","UserID":"","RedirectURI":"","Scope":"","Code":"","CodeCreateAt":"0001-01-01T00:00:00Z","CodeExpiresIn":0,"Access":"_S0OOXJUPZOGTFAA__SPIG","AccessCreateAt":"2021-12-21T20:03:26.427334+07:00","AccessExpiresIn":7200000000000,"Refresh":"","RefreshCreateAt":"0001-01-01T00:00:00Z","RefreshExpiresIn":0}');
+```
+
 visit http://localhost:8080/
 
 ### Code Formatting
